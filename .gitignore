@@ -11,6 +11,7 @@ __pycache__/
 credentials.json
 token.json
 token.pickle
+config/*.json
 
 # Ignore VS Code settings
 .vscode/
