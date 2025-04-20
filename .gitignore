@@ -1,0 +1,38 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# Ignore API credentials & tokens
+credentials.json
+token.json
+token.pickle
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore credentials
+venv/
+env/
+.env/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# OS / IDE
+.vscode/
+*.swp
+
+# Output/Generated files
+*.drawio.png
+*.pdf
+*.docx
+*.zip

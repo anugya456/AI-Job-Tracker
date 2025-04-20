@@ -1,0 +1,29 @@
+# Enforce LF line endings for all code files (for cross-platform consistency)
+*.py     text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+*.sh     text eol=lf
+*.yml    text eol=lf
+*.txt    text eol=lf
+*.csv    text eol=lf
+
+# Treat Jupyter/IPYNB files as binary (prevent merge conflicts)
+*.ipynb  binary
+
+# Binary files (images, diagrams, exports)
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.svg    binary
+*.docx   binary
+*.pdf    binary
+*.xlsx   binary
+*.drawio binary
+
+# Ignore system-specific hidden files
+.DS_Store export-ignore
+Thumbs.db export-ignore
+
+# Optional: prevent diffing on logs and exports
+*.log    diff=none
+*.zip    binary
