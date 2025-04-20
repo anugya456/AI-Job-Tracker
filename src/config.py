@@ -39,7 +39,11 @@ JOB_POOL_SHEET_NAME = "Job Pool"
 # Name of sheet 2
 RECOMMENDED_JOBS_SHEET_NAME = "Recommended Jobs"
 
-SPREADSHEET_ID = "1yd5RR_RiDx2yEpuGzsHxG5EwdDyREHBhxrmnsZ09HjM"  # Replace with actual ID
+load_dotenv()
+
+SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+if not SPREADSHEET_ID:
+    raise ValueError("SPREADSHEET_ID not set. Please define it in your .env file.")
 
 # Number of top jobs to display in the "Recommended Jobs" sheet
 TOP_N_JOBS = 20  # We can update this number as needed
