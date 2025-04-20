@@ -23,6 +23,7 @@ config/*.json
 venv/
 env/
 .env/
+.env
 
 # System files
 .DS_Store
